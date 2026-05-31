@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+</head>
+<body>
+  <h1 class="service-page">Service Page</h1>
+    <div class="our-services" id="services">
+      <div class="left-box">
+        <div class="service-heading">
+          <h2>Our Services</h2>
+          <p>
+            Click On The Add To Cart Button To Add The Services To Your Cart
+          </p>
+        </div>
+        <div class="service-items">
+          <div class="first-item" id="items">
+            <div>👚Dry Cleaning - <span class="price">₹200.00</span></div>
+            <button class="Add-items">
+              Add items<ion-icon name="add-circle-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="second-item" id="items">
+            <div>🫗Wash & Fold - <span class="price">₹100.00</span></div>
+            <button class="Add-items">
+              Add items<ion-icon name="add-circle-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="third-item" id="items">
+            <div>🔥Ironing - <span class="price">₹30.00</span></div>
+            <button class="Add-items">
+              Add items<ion-icon name="add-circle-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="fourth-item" id="items">
+            <div>🙆Stain Removal - <span class="price">₹500.00</span></div>
+            <button class="Add-items">
+              Add items<ion-icon name="add-circle-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="five-item" id="items">
+            <div>
+              🧥Leather & Suede Cleaning - <span class="price">₹999.00</span>
+            </div>
+            <button class="Add-items">
+              Add items<ion-icon name="add-circle-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="six-item" id="items">
+            <div>
+              👗Wedding & Dress Cleaning - <span class="price">₹2800.00</span>
+            </div>
+            <button class="Add-items">
+              Add items<ion-icon name="add-circle-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="add-items">
+          <ion-icon name="information-circle-outline"></ion-icon>Add the items
+          to the cart and book now
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="right-box-heading">
+          <h2>Added Items</h2>
+        </div>
+        <div class="added-items-table">
+          <table id="cart-table">
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Service Name</th>
+                <th colspan="2">Price</th>
+              </tr>
+            </thead>
+            <tbody id="cart-body">
+              <tr class="empty-row" id="empty-row">
+                <td colspan="3">
+                  <div class="empty-state">
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                    <p class="no-add"><strong>No Items Added</strong></p>
+                    <p class="no-add-des">Add items to the cart from the service bar</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="total-amount">
+          <h3>Total Amount: ₹<span id="total-price">0</span></h3>
+        </div>
+
+        <!-- BOOK NOW FORM -->
+        <div class="book-now">
+          <h3 class="">Book Now</h3>
+          <form id="booking-form">
+            <input type="text" id="customer-name" placeholder="Full Name..." />
+            <span id="customer-name-error" class="field-error"></span>
+
+            <input type="email" id="customer-email" placeholder="Email..." />
+            <span id="customer-email-error" class="field-error"></span>
+
+            <input
+              type="tel"
+              id="customer-phone"
+              placeholder="Phone No..."
+            />
+            <span id="customer-phone-error" class="field-error"></span>
+
+            <button type="submit" class="book-service">Confirm Booking</button>
+            <p id="book-conform"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="/style.css">
+</body>
+</html>
