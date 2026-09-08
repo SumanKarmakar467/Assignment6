@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
                 res.write('Error loading Home Page'); 
                 return res.end(); 
             }
-            res.write(data); // this is the data
+            res.write(data); // this is the dat
             return res.end();
         });
     }
