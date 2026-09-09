@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
         });
     }
     // for about page
-    else if(req.url === '/abot'){
+    else if(req.url === '/about'){
         fs.readFile('about.html', (err, data) => {
             if(err){ 
                 res.write('Error loading About Page'); 
